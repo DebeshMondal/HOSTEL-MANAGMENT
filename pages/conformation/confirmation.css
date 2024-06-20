@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #FFD180; /* Light orange background */
+  }
+  
+  h2 {
+    margin-top: 0;
+    color: #FF5722; /* Dark orange text color */
+  }
+  
+  #confirmationDetails {
+    max-width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #FFE0B2; /* Light orange box background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #confirmationDetails p {
+    margin: 10px 0;
+    color: #000; /* Black text color */
+  }
+  
+  #confirmationDetails p strong {
+    font-weight: bold;
+    color: #000; /* Black text color */
+  }
+  

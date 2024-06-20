@@ -1,0 +1,70 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #98FB98; /* Light green background */
+}
+
+h2 {
+  margin-top: 0;
+  text-align: center; /* Center-align the text */
+  position: relative; /* Position relative for pseudo-element */
+}
+
+h2::after {
+  content: ''; /* Required for pseudo-elements */
+  position: absolute;
+  bottom: -5px; /* Adjust the distance of the underline from the text */
+  left: 50%; /* Center the underline */
+  width: 100px; /* Adjust the width of the underline */
+  height: 2px; /* Adjust the thickness of the underline */
+  background-color: #000; /* Color of the underline */
+  transform: translateX(-50%); /* Center the underline horizontally */
+}
+
+.student-form {
+  max-width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #F0FFF0; /* Light green box background */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; /* Align items horizontally */
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row; /* Align label and input horizontally */
+  justify-content: space-between; /* Add space between label and input */
+  margin-bottom: 15px;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-left: 10px; /* Add some spacing between label and input */
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #32CD32; /* Green button background */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px; /* Add some spacing between input fields and button */
+}
+
+button:hover {
+  background-color: #228B22; /* Darker green on hover */
+}
