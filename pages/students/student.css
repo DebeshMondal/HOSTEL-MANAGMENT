@@ -1,70 +1,68 @@
-.container {
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #41f4009f; /* Light gray background */
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #98FB98; /* Light green background */
 }
 
-h2 {
-  margin-top: 0;
-  text-align: center; /* Center-align the text */
-  position: relative; /* Position relative for pseudo-element */
-}
-
-h2::after {
-  content: ''; /* Required for pseudo-elements */
-  position: absolute;
-  bottom: -5px; /* Adjust the distance of the underline from the text */
-  left: 50%; /* Center the underline */
-  width: 100px; /* Adjust the width of the underline */
-  height: 2px; /* Adjust the thickness of the underline */
-  background-color: #000; /* Color of the underline */
-  transform: translateX(-50%); /* Center the underline horizontally */
-}
-
-.student-form {
-  max-width: 300px;
+/* Container styling */
+.container {
+  width: 100%;
+  max-width: 600px;
   padding: 20px;
-  border-radius: 10px;
-  background-color: #F0FFF0; /* Light green box background */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column; /* Align items horizontally */
+  background-color: #34db42; /* Light green background */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgb(0, 0, 0);
 }
 
-.form-group {
+/* Form styling */
+form {
   display: flex;
-  flex-direction: row; /* Align label and input horizontally */
-  justify-content: space-between; /* Add space between label and input */
-  margin-bottom: 15px;
+  flex-direction: column;
 }
 
+/* Label styling */
 label {
   margin-bottom: 5px;
+  font-weight: bold;
+  color: #0e0828; /* Dark green text */
 }
 
+/* Input styling */
 input[type="text"],
-input[type="tel"],
-input[type="email"] {
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-left: 10px; /* Add some spacing between label and input */
-}
-
-button {
-  width: 100%;
+input[type="email"],
+input[type="hidden"] {
+  margin-bottom: 20px;
   padding: 10px;
-  background-color: #32CD32; /* Green button background */
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 10px; /* Add some spacing between input fields and button */
+  border: 1px solid #a5d6a7; /* Light green border */
+  border-radius: 4px;
+  font-size: 16px;
+  color: #7d7c2e; /* Dark green text */
+  background-color: #ffffff; /* White background */
 }
 
-button:hover {
-  background-color: #228B22; /* Darker green on hover */
+/* Submit button styling */
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #1493dc; /* Medium green background */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: #000000;
+}
+
+button[type="submit"]:hover {
+  background-color: #ff7300da; /* Dark green background on hover */
 }

@@ -24,5 +24,7 @@ window.addEventListener("load", function() {
 // Function to handle room booking
 function bookRoom(roomType) {
   // Redirect to student details page with room type in URL query parameter
-  window.location.href = `../pages/students/student.html?room=${roomType}`;
+  window.location.href = `../../pages/students/student.html?room=${roomType}`;
 }
+
+
